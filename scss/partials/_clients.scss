@@ -1,0 +1,67 @@
+/*--------------------
+    OUR CLIENTS
+---------------------*/
+.clients {
+    font-size: 18px;
+    width: 100%;
+    padding: 60px 0 100px 0;
+    background: url('../img/pattern-overlay1.png');
+    background-size: cover;
+}
+.clients_title {
+    @extend .princ_title;
+}
+.one_client {
+    padding: 30px 0 40px 0;
+    float: left;
+    margin-left: 30px;
+    width: 370px;
+    border: 1px solid $black;
+    background: #fff;
+}
+.one_client_img_block {
+    display: table;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.one_client_name {
+    display: table;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: Lato-Bold;
+    margin-bottom: 5px;
+}
+.one_client_review {
+    text-align: center;
+    line-height: 21px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: Lato-Medium;
+    position: relative;
+    width: 80%;
+    img {
+        display: block;
+    }
+}
+.one_client_link {
+    display: table;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: Lato-Bold;
+    font-size: 14px;
+    color: $black !important;
+    text-decoration: underline;
+    &:hover,
+    &:active {
+        color: $black !important;
+    }
+}
+.quote_start {
+    margin-left: 20px;
+}
+.quote_finish {
+    margin-right: 20px;
+    text-align: right;
+    margin-bottom: 50px;
+}

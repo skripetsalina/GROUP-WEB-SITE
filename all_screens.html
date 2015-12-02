@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>NEW GROUP SITE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+		<link rel='stylesheet' type="text/css" href='https://fonts.googleapis.com/css?family=Lato:300'>
+		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css"><!--animate appearance of elements on scroll-->
+		<link rel="stylesheet" type="text/css" href="css/square_brackets.css"><!--animated square brackets for hovered link in one work-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	    <script src="js/wow.min.js"></script><!--animate appearance of elements on scroll-->
+        <script>new WOW().init();</script><!--animate appearance of elements on scroll-->
+	    <script src="js/ken_burns.js"></script><!--effect of background scaling on screen 2-->
+	    <script src="js/one_work.js"></script><!--animation of one work: hide or show description of one work-->
+	    <script src="js/ribbon.js"></script><!--transform ribbom to line and back-->
+	    <script src="js/smooth_scroll.js"></script><!--make scroll to anchors smooth-->
+	    <script src="js/hamburger_menu.js"></script><!--animation of hamburger menu-->
+	    <script src="js/group_agency_studio.js"></script><!--shows and hides some blocks dipending on wich page is active (Group,Agency,Studio)-->
+	    <script src="js/carousel_dots_adaptive.js"></script><!--centres carousel dots on different screen width-->
+	</head>
+	<body class="green">
+		<!--MENU-->
+		<div class="menu">
+			<div class="wrap clearfix">
+				<div class="menu_left">
+				<!--menu star(link to top of page) has 6 avaliable options
+				group green, agency blue, studio violet, 
+				group white, agency white, studio white-->
+					<a class='star_group_green' href='#screen1_group'><img src='img/logo_star_green.png' alt='To top of page'></a>
+					<a class='star_agency_blue' href='#screen1_agency'><img src='img/logo_star_blue.png' alt='To top of page'></a>
+					<a class='star_studio_violet' href='#screen1_studio'><img src='img/logo_star_violet.png' alt='To top of page'></a>
+					<a class='star_group_white' href='#screen1_group'><img src='img/logo_star_white.png' alt='To top of page'></a>
+					<a class='star_agency_white' href='#screen1_agency'><img src='img/logo_star_white.png' alt='To top of page'></a>
+					<a class='star_studio_white' href='#screen1_studio'><img src='img/logo_star_white.png' alt='To top of page'></a>
+				</div>
+				<div class="menu_right">
+					<div class="hamburger" id="hamburger">
+					    <span class="menu-global menu-top"></span>
+					    <span class="menu-global menu-middle"></span>
+					    <span class="menu-global menu-bottom"></span>
+					</div>
+				</div>
+				<div class="dropdown_wrap clearfix">
+					<!--navigation links for Group, Agency and Studio-->
+					<div class="links_wrap links_wrap_group">
+						<a href="#works_group">works</a>
+						<a href="#about_us_group">about us</a>
+						<a href="#contacts_group">contacts</a>
+					</div>
+					<div class="links_wrap links_wrap_agency">
+						<a href="#works_agency">works</a>
+						<a href="#about_us_agency">about us</a>
+						<a href="#contacts_agency">contacts</a>
+					</div>
+					<div class="links_wrap links_wrap_studio">
+						<a href="#works_studio">works</a>
+						<a href="#about_us_studio">about us</a>
+						<a href="#contacts_studio">contacts</a>
+					</div>
+				</div><!--end of Dropdown_wrap-->
+			</div><!--end of Wrap-->
+		</div><!--end of Menu-->
+
+		<!--RIBBONS WRAP for 1920px screen, contains 2 ribbons-->
+		<div id="ribbons_wrap" class="ribbons_wrap its_ribbon_now clearfix">
+			<!--RIBBON1-->
+			<div id="ribbon1" class="left_ribbon">
+		  		<svg width="1920px" height="600px">
+					<g style="stroke: none;">
+						<!--Ribbon part 1-->	
+					    <polygon points="0,392 480,28 160,84 0,224" style="fill: #5e8e00;">
+					    	<animate id="to_line_1_1" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="0,500 320,500 320,420 0,420"/>
+					    	<animate id="reverse_part_1_1" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="0,392 480,28 160,84 0,224"/>
+					    	<animate id="ribbon_to_green_1_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#5e8e00"></animate>
+					    	<animate id="ribbon_to_blue_1_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#1d96b2"></animate>
+					    	<animate id="ribbon_to_violet_1_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#493255"></animate>
+					    	<animate id="ribbon_to_main_green_1_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_1_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_1_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 2-->
+					    <polygon points="160 84, 840 320, 1200 280, 480 28" style="fill: #8fca29;">
+					    	<animate id="to_line_2_1" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="320,420 1080,420 1080,500 320,500"/>
+					    	<animate id="reverse_part_2_1" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="160 84, 840 320, 1200 280, 480 28"/>
+					    	<animate id="ribbon_to_green_2_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8fca29"></animate>
+					    	<animate id="ribbon_to_blue_2_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#4faece"></animate>
+					    	<animate id="ribbon_to_violet_2_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#994a89"></animate>
+					    	<animate id="ribbon_to_main_green_2_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_2_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_2_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 4-->
+					    <polygon points="1640 28, 1920 224, 1920 392, 1400 0" style="fill: #5e8e00;">
+					    	<animate id="to_line_4_1" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="1480,500 1920,500 1920,420 1480,420"/>
+					    	<animate id="reverse_part_4_1" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="1640 28, 1920 224, 1920 392, 1400 0"/>
+					    	<animate id="ribbon_to_green_4_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#5e8e00"></animate>
+					    	<animate id="ribbon_to_blue_4_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#1d96b2"></animate>
+					    	<animate id="ribbon_to_violet_4_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#493255"></animate>
+					    	<animate id="ribbon_to_main_green_4_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_4_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_4_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 3-->
+					    <polygon points="840 320, 1200 280, 1640 28, 1400 0" style="fill: #a8db46;">
+					    	<animate id="to_line_3_1" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="1080,420 1080,500 1480,500 1480,420"/>
+					    	<animate id="reverse_part_3_1" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="840 320, 1200 280, 1640 28, 1400 0"/>
+					    	<animate id="ribbon_to_green_3_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#a8db46"></animate>
+					    	<animate id="ribbon_to_blue_3_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#2bbfe2"></animate>
+					    	<animate id="ribbon_to_violet_3_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8e2a7d"></animate>
+					    	<animate id="ribbon_to_main_green_3_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_3_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_3_1" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					</g>
+				</svg>
+			</div><!--end of Ribbon1-->
+			
+			<!--RIBBON2-->
+			<div id="ribbon2" class="active_ribbon">
+		  		<svg  width="1920px" height="600px">
+					<g style="stroke: none;">
+						<!--Ribbon part 1-->	
+					    <polygon points="0,392 480,28 160,84 0,224" style="fill: #5e8e00;">
+					    	<animate id="to_line_1_2" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="0,420 320,420 320,500 0,500"/>
+					    	<animate id="reverse_part_1_2" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="0,392 480,28 160,84 0,224"/>
+					    	<animate id="ribbon_to_green_1_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#5e8e00"></animate>
+					    	<animate id="ribbon_to_blue_1_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#1d96b2"></animate>
+					    	<animate id="ribbon_to_violet_1_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#493255"></animate>
+					    	<animate id="ribbon_to_main_green_1_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_1_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_1_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 2-->
+					    <polygon points="160 84, 840 320, 1200 280, 480 28" style="fill: #8fca29;">
+					    	<animate id="to_line_2_2" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="320,500 1080,500 1080,420 320,420"/>
+					    	<animate id="reverse_part_2_2" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="160 84, 840 320, 1200 280, 480 28"/>
+					    	<animate id="ribbon_to_green_2_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8fca29"></animate>
+					    	<animate id="ribbon_to_blue_2_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#4faece"></animate>
+					    	<animate id="ribbon_to_violet_2_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#994a89"></animate>
+					    	<animate id="ribbon_to_main_green_2_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_2_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_2_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 4-->
+					    <polygon points="1640 28, 1920 224, 1920 392, 1400 0" style="fill: #5e8e00;">
+					    	<animate id="to_line_4_2" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="1480,420 1920,420 1920,500 1480,500"/>
+					    	<animate id="reverse_part_4_2" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="1640 28, 1920 224, 1920 392, 1400 0"/>
+					    	<animate id="ribbon_to_green_4_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#5e8e00"></animate>
+					    	<animate id="ribbon_to_blue_4_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#1d96b2"></animate>
+					    	<animate id="ribbon_to_violet_4_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#493255"></animate>
+					    	<animate id="ribbon_to_main_green_4_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_4_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_4_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 3-->
+					    <polygon points="840 320, 1200 280, 1640 28, 1400 0" style="fill: #a8db46;">
+					    	<animate id="to_line_3_2" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="1080,500 1080,420 1480,420 1480,500"/>
+					    	<animate id="reverse_part_3_2" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="840 320, 1200 280, 1640 28, 1400 0"/>
+					    	<animate id="ribbon_to_green_3_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#a8db46"></animate>
+					    	<animate id="ribbon_to_blue_3_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#2bbfe2"></animate>
+					    	<animate id="ribbon_to_violet_3_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8e2a7d"></animate>
+					    	<animate id="ribbon_to_main_green_3_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_3_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_3_2" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					</g>
+				</svg>
+			</div><!--end of Ribbon2-->
+		</div><!--end of Ribbons_wrap-->
+		
+		<!--RIBBONS WRAP for 1366px screen, contains 2 ribbons-->
+		<div id="ribbons_wrap_1366" class="ribbons_wrap_1366 its_ribbon_now clearfix">
+			<!--RIBBON1-->
+			<div id="ribbon1_1366" class="left_ribbon_1366">
+		  		<svg width="1366px" height="600px">
+					<g style="stroke: none;">
+						<!--Ribbon part 1-->	
+					    <polygon points="0,392 348,28 116,84 0,224" style="fill: #5e8e00;">
+					    	<animate id="to_line_1_1_1366" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="0,500 232,500 232,420 0,420"/>
+					    	<animate id="reverse_part_1_1_1366" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="0,392 348,28 116,84 0,224"/>
+					    	<animate id="ribbon_to_green_1_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#5e8e00"></animate>
+					    	<animate id="ribbon_to_blue_1_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#1d96b2"></animate>
+					    	<animate id="ribbon_to_violet_1_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#493255"></animate>
+					    	<animate id="ribbon_to_main_green_1_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_1_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_1_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 2-->
+					    <polygon points="116 84, 609 320, 870 280, 348 28" style="fill: #8fca29;">
+					    	<animate id="to_line_2_1_1366" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="232,420 783,420 783,500 232,500"/>
+					    	<animate id="reverse_part_2_1_1366" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="116 84, 609 320, 870 280, 348 28"/>
+					    	<animate id="ribbon_to_green_2_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8fca29"></animate>
+					    	<animate id="ribbon_to_blue_2_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#4faece"></animate>
+					    	<animate id="ribbon_to_violet_2_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#994a89"></animate>
+					    	<animate id="ribbon_to_main_green_2_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_2_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_2_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 4-->
+					    <polygon points="1189 28, 1366 224, 1366 392, 1015 0" style="fill: #5e8e00;">
+					    	<animate id="to_line_4_1_1366" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="1073,500 1366,500 1366,420 1073,420"/>
+					    	<animate id="reverse_part_4_1_1366" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="1189 28, 1366 224, 1366 392, 1015 0"/>
+					    	<animate id="ribbon_to_green_4_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#5e8e00"></animate>
+					    	<animate id="ribbon_to_blue_4_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#1d96b2"></animate>
+					    	<animate id="ribbon_to_violet_4_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#493255"></animate>
+					    	<animate id="ribbon_to_main_green_4_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_4_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_4_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 3-->
+					    <polygon points="609 320, 870 280, 1189 28, 1015 0" style="fill: #a8db46;">
+					    	<animate id="to_line_3_1_1366" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="783,420 783,500 1073,500 1073,420"/>
+					    	<animate id="reverse_part_3_1_1366" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="609 320, 870 280, 1189 28, 1015 0"/>
+					    	<animate id="ribbon_to_green_3_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#a8db46"></animate>
+					    	<animate id="ribbon_to_blue_3_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#2bbfe2"></animate>
+					    	<animate id="ribbon_to_violet_3_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8e2a7d"></animate>
+					    	<animate id="ribbon_to_main_green_3_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_3_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_3_1_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					</g>
+				</svg>
+			</div><!--end of Ribbon1-->
+			
+			<!--RIBBON2-->
+			<div id="ribbon2_1366" class="active_ribbon_1366">
+		  		<svg  width="1366px" height="600px">
+					<g style="stroke: none;">
+						<!--Ribbon part 1-->	
+					    <polygon points="0,392 348,28 116,84 0,224" style="fill: #5e8e00;">
+					    	<animate id="to_line_1_2_1366" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="0,420 232,420 232,500 0,500"/>
+					    	<animate id="reverse_part_1_2_1366" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="0,392 348,28 116,84 0,224"/>
+					    	<animate id="ribbon_to_green_1_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#5e8e00"></animate>
+					    	<animate id="ribbon_to_blue_1_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#1d96b2"></animate>
+					    	<animate id="ribbon_to_violet_1_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#493255"></animate>
+					    	<animate id="ribbon_to_main_green_1_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_1_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_1_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 2-->
+					    <polygon points="116 84, 609 320, 870 280, 348 28" style="fill: #8fca29;">
+					    	<animate id="to_line_2_2_1366" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="232,500 783,500 783,420 232,420"/>
+					    	<animate id="reverse_part_2_2_1366" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="116 84, 609 320, 870 280, 348 28"/>
+					    	<animate id="ribbon_to_green_2_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8fca29"></animate>
+					    	<animate id="ribbon_to_blue_2_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#4faece"></animate>
+					    	<animate id="ribbon_to_violet_2_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#994a89"></animate>
+					    	<animate id="ribbon_to_main_green_2_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_2_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_2_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 4-->
+					    <polygon points="1189 28, 1366 224, 1366 392, 1015 0" style="fill: #5e8e00;">
+					    	<animate id="to_line_4_2_1366" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="1073,420 1366,420 1366,500 1073,500"/>
+					    	<animate id="reverse_part_4_2_1366" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="1189 28, 1366 224, 1366 392, 1015 0"/>
+					    	<animate id="ribbon_to_green_4_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#5e8e00"></animate>
+					    	<animate id="ribbon_to_blue_4_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#1d96b2"></animate>
+					    	<animate id="ribbon_to_violet_4_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#493255"></animate>
+					    	<animate id="ribbon_to_main_green_4_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_4_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_4_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					    <!--Ribbon part 3-->
+					    <polygon points="609 320, 870 280, 1189 28, 1015 0" style="fill: #a8db46;">
+					    	<animate id="to_line_3_2_1366" begin="indefinite" fill="freeze" attributeName="points" dur="1000ms" 
+					    	to="783,500 783,420 1073,420 1073,500"/>
+					    	<animate id="reverse_part_3_2_1366" begin="indefinite" fill="freeze" attributeName="points" dur="800ms" 
+					    	to="609 320, 870 280, 1189 28, 1015 0"/>
+					    	<animate id="ribbon_to_green_3_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#a8db46"></animate>
+					    	<animate id="ribbon_to_blue_3_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#2bbfe2"></animate>
+					    	<animate id="ribbon_to_violet_3_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8e2a7d"></animate>
+					    	<animate id="ribbon_to_main_green_3_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#b2c857"></animate>
+					    	<animate id="ribbon_to_main_blue_3_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#60a9e6"></animate>
+					    	<animate id="ribbon_to_main_violet_3_2_1366" begin="indefinite" fill="freeze" attributeName="fill" dur="300ms" to="#8f599a"></animate>
+					    </polygon>
+					</g>
+				</svg>
+			</div><!--end of Ribbon2-->
+		</div><!--end of Ribbons_wrap-->
+
+		<!--CAROUSEL-->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+	    	<!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      	<li id="dot1" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      	<li id="dot2" data-target="#myCarousel" data-slide-to="1"></li>
+		      	<li id="dot3" data-target="#myCarousel" data-slide-to="2"></li>
+		    </ol>
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+		    	<!--CREATIVE GROUP-->
+		      	<div class="item item1 group active">
+		      		<!--SCREEN1-->
+			      	<div class="screen1" id="screen1">
+			      		<p class="screen1_title">bzzz!</p>
+			      		<p class="screen1_descr">creative group</p>	
+			      		<div class="screen1_logos clerfix">
+			      			<img class="screen1_studio_logo" src="img/logo_studio_001.png" alt="bzzz! web development studio">
+			      			<img class="screen1_agency_logo" src="img/logo_agency.png" alt="bzzz! creative agency">
+			      		</div>
+			      	</div> 	
+
+					<!--SCREEN2-->
+					<div class="screen2">
+						<div class="background"></div>
+						<div class="wrap">
+							<div data-wow-delay="0.5s" data-wow-duration="1.5s" class="screen2_logo wow fadeInDown col-lg-12" >
+								<!--takes img of logo from js "group_agency_studio-->"	
+							</div>
+							<div class="screen2_title">
+								<!--takes title from js "group_agency_studio"-->
+							</div>
+							<div data-wow-delay="1.5s" data-wow-duration="1.5s" class="screen2_text wow fadeInDown col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptates, recusandae fuga, deserunt facilis quis consectetur! Nobis alias, sed itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laudantium.
+							</div>	
+						</div><!--end of Wrap-->
+					</div><!--end of Screen2-->
+
+					<!--SCREEN3-->
+					<div class="screen3 clearfix">
+						<!--blue line Last works of Agency-->
+						<div data-wow-delay="0s" data-wow-duration="1.5s" class="agency_line wow fadeInLeft">
+							<div class="wrap">
+								<img src="img/logo_agency.png" alt="bzzz! greative agency">
+							</div>
+						</div>
+						<!--violet line Last works of Studio-->
+						<div data-wow-delay="0s" data-wow-duration="1.5s" class="studio_line wow fadeInLeft">
+							<div class="wrap">
+								<img src="img/logo_studio_002.png" alt="bzzz! web development studio">
+							</div>
+						</div>
+						<div class="wrap clearfix">
+							<div data-wow-delay="1s" data-wow-duration="1.5s" class="our_last_works_title wow fadeInLeft">
+								<p>Our</p>
+								<p>last</p>
+								<p>works</p>
+							</div>
+
+							<!--blue line Last works of Agency for screen 320px-->
+							<div data-wow-delay="1s" data-wow-duration="1.5s" class="agency_line_900 wow fadeInLeft">
+								<img src="img/logo_agency.png" alt="bzzz! greative agency">
+							</div><!--end of blue line-->
+
+							<div class="last_works clearfix">
+								<!--Last Works of Agency-->
+								<div id="agency_works" class="agency_works clearfix">
+									<!--one work-->
+									<div class="one_work wow fadeInDown">
+										<img src="img/small_image.png" alt="">
+										<div class="description cl-effect-1">
+											<p class="descr_title">Lorem ipsum dolor</p>
+											<p class="descr_text">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+											</p>
+											<a class="descr_link" href="#">Lorem ipsum >></a>
+											<div class="line"></div>
+										</div><!--end of description-->
+									</div><!--end of One_work-->
+
+									<!--one work-->
+									<div class="one_work wow fadeInDown">
+										<img src="img/small_image.png" alt="">
+										<div class="description cl-effect-1">
+											<p class="descr_title">Lorem ipsum dolor</p>
+											<p class="descr_text">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											</p>
+											<a class="descr_link" href="#">Lorem ipsum >></a>
+											<div class="line"></div>
+										</div><!--end of description-->
+									</div><!--end of One_work-->
+
+									<!--one work-->
+									<div class="one_work wow fadeInDown">
+										<img src="img/small_image.png" alt="">
+										<div class="description cl-effect-1">
+											<p class="descr_title">Lorem ipsum dolor</p>
+											<p class="descr_text">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+											</p>
+											<a class="descr_link" href="#">Lorem ipsum >></a>
+											<div class="line"></div>
+										</div><!--end of description-->
+									</div><!--end of One_work-->
+
+									<!--one work-->
+									<div class="one_work wow fadeInDown">
+										<img src="img/small_image.png" alt="">
+										<div class="description cl-effect-1">
+											<p class="descr_title">Lorem ipsum dolor</p>
+											<p class="descr_text">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+											</p>
+											<a class="descr_link" href="#">Lorem ipsum >></a>
+											<div class="line"></div>
+										</div><!--end of description-->
+									</div><!--end of One_work-->
+
+									<!--one work-->
+									<div class="one_work wow fadeInDown">
+										<img src="img/small_image.png" alt="">
+										<div class="description cl-effect-1">
+											<p class="descr_title">Lorem ipsum dolor</p>
+											<p class="descr_text">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											</p>
+											<a class="descr_link" href="#">Lorem ipsum >></a>
+											<div class="line"></div>
+										</div><!--end of description-->
+									</div><!--end of One_work-->
+
+									<!--one work-->
+									<div class="one_work wow fadeInDown">
+										<img src="img/small_image.png" alt="">
+										<div class="description cl-effect-1">
+											<p class="descr_title">Lorem ipsum dolor</p>
+											<p class="descr_text">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+											</p>
+											<a class="descr_link" href="#">Lorem ipsum >></a>
+											<div class="line"></div>
+										</div><!--end of description-->
+									</div><!--end of One_work-->
+								</div><!--end of Agency_works-->
+
+								<!--violet line Last works of Studio for screen 320px-->
+								<div data-wow-delay="0s" data-wow-duration="1.5s" class="studio_line_900 wow fadeInLeft">
+									<img src="img/logo_studio_002.png" alt="bzzz! web development studio">
+								</div><!--end of violet line-->
+
+								<!--Last Works of Studio-->
+								<div class="studio_works clearfix">
+									<!--one work-->
+									<div class="one_work wow fadeInDown">
+										<img src="img/small_image.png" alt="">
+										<div class="description cl-effect-1">
+											<p class="descr_title">Lorem ipsum dolor</p>
+											<p class="descr_text">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+											</p>
+											<a class="descr_link" href="#">Lorem ipsum >></a>
+											<div class="line"></div>
+										</div><!--end of description-->
+									</div><!--end of One_work-->
+
+									<!--one work-->
+									<div class="one_work wow fadeInDown">
+										<img src="img/small_image.png" alt="">
+										<div class="description cl-effect-1">
+											<p class="descr_title">Lorem ipsum dolor</p>
+											<p class="descr_text">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+											</p>
+											<a class="descr_link" href="#">Lorem ipsum >></a>
+											<div class="line"></div>
+										</div><!--end of description-->
+									</div><!--end of One_work-->
+
+									<!--one work-->
+									<div class="one_work wow fadeInDown">
+										<img src="img/small_image.png" alt="">
+										<div class="description cl-effect-1">
+											<p class="descr_title">Lorem ipsum dolor</p>
+											<p class="descr_text">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+											</p>
+											<a class="descr_link" href="#">Lorem ipsum >></a>
+											<div class="line"></div>
+										</div><!--end of description-->
+									</div><!--end of One_work-->
+								</div><!--end of Studio_works-->
+							</div><!--end of Last works-->
+						</div><!--end of Wrap-->
+					</div><!--end of Screen3-->
+
+					<!--VISIT OUR WEB SITE-->
+					<div class="visit">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" class="visit_left col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0">
+								<p>visit our</p>
+								<p>web site</p>
+							</div>
+							<div class="visit_right col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-1">
+								<div data-wow-duration="1.5s">Want to see more works and to know more about us?</div>
+								<div data-wow-duration="1.5s">Go to 
+									<a href="#">www.dev.bzzz.biz.ua</a>
+								</div>
+							</div>
+						</div><!--end of Wrap-->
+					</div><!--end of Visit-->
+
+					<!--OUR PRINCIPLES-->
+					<div class="principles">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" class="princ_title col-lg-12 wow fadeInLeft">
+								<p>our</p>
+								<p>principles</p>
+							</div>
+							<div class="princ_features">
+								<div class="princ_one_feature clearfix">
+									<p class="feat_number">1</p>
+									<div class="feat_content">
+										<p class="feat_title">индивидуальность</p>
+										<p class="feat_text">
+											Мы верим, что каждая компания уникальна и создана с душой. Мы вникаем в структуру компании, ее принципы и преимущества, чтобы в полном объеме передать неповторимость каждого бизнеса. Работая в тесном контакте с заказчиком, мы стараемся сделать именно тот продукт, который полностью отразит специфику компании и представит ее клиенту в лучшем свете.	
+										</p>
+									</div><!--end of Feature_content-->
+								</div><!--end of Princ_one_feature-->
+
+								<div class="princ_one_feature clearfix">
+									<p class="feat_number">2</p>
+									<div class="feat_content">
+										<p class="feat_title">внимание к деталям</p>
+										<p class="feat_text">
+											Отличный продукт от хорошего отличают именно детали. Мы понимаем насколько важно прорабатывать каждую мелочь. Никакой халтуры, каждая кнопочка, каждый сантиметр рекламного плаката, все прорабатывается до мелочей и разрабатывается для каждого клиента индивидуально.
+										</p>
+									</div><!--end of Feature_content-->
+								</div><!--end of Princ_one_feature-->
+
+								<div class="princ_one_feature clearfix">
+									<p class="feat_number">3</p>
+									<div class="feat_content clearfix">
+										<p class="feat_title">ориентированность на цели</p>
+										<p class="feat_text">
+											Работая с нами вы получите не просто красивую картинку, но и реально работающий инструмент. При создании продукта мы ориентированы на те бизнес-цели, которые мы с Вами определили в самом начале и строим все концепции и продукты с четкой ориентировкой на цель.	
+										</p>
+									</div><!--end of Feature_content-->
+								</div><!--end of Princ_one_feature-->
+							</div><!--end of Princ_features-->
+							<div class="princ_imgs">
+								<img data-wow-duration="1.5s" data-wow-delay="1s" class="princ_img1 wow fadeInRight" src="img/principles_001.png" alt="our principle: individuality">
+								<img data-wow-duration="1.5s" data-wow-delay="1.5s" class="princ_img2 wow fadeInRight" src="img/principles_002.png" alt="our principle: focus on goal">
+								<img data-wow-duration="1.5s" data-wow-delay="2s" class="princ_img3 wow fadeInRight" src="img/principles_003.png" alt="our principle: attention to details">
+							</div><!--end of Princ_imgs-->
+						</div><!--end of Wrap-->
+					</div><!--end of Principles-->
+					
+					<!--OUR ADVANTAGES-->
+					<div class="advantages">
+						<div class="wrap clearfix">
+							<div data-wow-delay="0.5" data-wow-duration="1.5s" class="adv_title col-lg-12 wow fadeInLeft">
+								<p>our</p>
+								<p>advantages</p>
+							</div>
+
+							<!--one Advantage-->
+							<div class="one_adv">
+								<div class="one_adv_img_block"><img src="img/advantage_001.png" alt=""></div>
+								<div class="one_adv_title">идеи</div>
+								<ul class="one_adv_features">
+									<li>ориентированность на цели</li>
+									<li>бесплатная консультация</li>
+									<li>креатив</li>
+									<li>никаких шаблонных решений!</li>
+								</ul>
+							</div><!--end of One_adv-->
+
+							<!--one Advantage-->
+							<div class="one_adv">
+								<div class="one_adv_img_block"><img src="img/advantage_002.png" alt=""></div>
+								<div class="one_adv_title">дизайн</div>
+								<ul class="one_adv_features">
+									<li>продуманность</li>
+									<li>связанность</li>
+									<li>постоянное согласование</li>
+									<li>уникальность</li>
+								</ul>
+							</div><!--end of One_adv-->
+
+							<!--one Advantage-->
+							<div class="one_adv">
+								<div class="one_adv_img_block"><img src="img/advantage_003.png" alt=""></div>
+								<div class="one_adv_title">разработка</div>
+								<ul class="one_adv_features">
+									<li>соблюдение сроков</li>
+									<li>проработка мелочей</li>
+									<li>тестирование</li>
+									<li>соответствие стандартам</li>
+								</ul>
+							</div><!--end of One_adv-->
+						</div><!--end of Wrap-->
+					</div><!--end of Advantages-->
+
+					<!--CONTACTS-->
+					<div class="contacts">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" class="visit_left col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0">
+								<p>contacts</p>
+							</div>
+							<div class="visit_right col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-1">
+								<div data-wow-duration="1.5s" class="contacts_top">
+									<p>PLEASE, CONTACT US AT ANY TIME!</p>
+									<p>You can reach us:</p>
+									<p>Tel. +38 093-990-04-79</p>
+								</div>
+								<div data-wow-duration="1.5s" class="contacts_bottom">
+									<p>Just write us!</p>
+									<p>E_mail: info@bzzz.biz.ua</p>
+									<p>WE WILL BE HAPPY TO HELP YOU!</p>
+								</div>
+							</div><!--end of visit_right-->
+						</div><!--end of Wrap-->
+					</div><!--end of Contacts-->
+
+					<!--CLIENTS-->
+					<div class="clients clearfix">
+						<div class="wrap clearfix">
+							<div class="clients_title">
+								<p>our</p>
+								<p>clients</p>
+							</div>
+
+							<!--one Client-->
+							<div class="one_client">
+								<div class="one_client_img_block">
+									<img src="img/client001.png" alt="Clients name here">
+								</div>
+								<p class="one_client_name">client name</p>
+								<div class="quote_start">
+									<img src="img/quote_start.png" alt="">
+								</div>
+								<p class="one_client_review">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia distinctio repudiandae sunt quis sed accusantium reiciendis repellendus officiis aperiam tenetur
+								</p>
+								<div class="quote_finish">
+									<img src="img/quote_finish.png" alt="">
+								</div>
+								<a href="#" class="one_client_link">link to this work >></a>
+							</div><!--end of One_client-->
+							
+							<!--one Client-->
+							<div class="one_client">
+								<div class="one_client_img_block">
+									<img src="img/client001.png" alt="Clients name here">
+								</div>
+								<p class="one_client_name">client name</p>
+								<div class="quote_start">
+									<img src="img/quote_start.png" alt="">
+								</div>
+								<p class="one_client_review">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia distinctio repudiandae sunt quis sed accusantium reiciendis repellendus officiis aperiam tenetur
+								</p>
+								<div class="quote_finish">
+									<img src="img/quote_finish.png" alt="">
+								</div>
+								<a href="#" class="one_client_link">link to this work >></a>
+							</div><!--end of One_client-->
+
+							<!--one Client-->
+							<div class="one_client">
+								<div class="one_client_img_block">
+									<img src="img/client001.png" alt="Clients name here">
+								</div>
+								<p class="one_client_name">client name</p>
+								<div class="quote_start">
+									<img src="img/quote_start.png" alt="">
+								</div>
+								<p class="one_client_review">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia distinctio repudiandae sunt quis sed accusantium reiciendis repellendus officiis aperiam tenetur
+								</p>
+								<div class="quote_finish">
+									<img src="img/quote_finish.png" alt="">
+								</div>
+								<a href="#" class="one_client_link">link to this work >></a>
+							</div><!--end of One_client-->
+						</div><!--end of Wrap-->
+					</div><!--end if Clients-->
+
+					<!--CONTACT FORM-->
+					<form data-wow-duration="1.5s" data-wow-delay="1s" class="wow fadeInDown" id="contact_form" action="" method="post">
+						<label>
+							<span class="input_descrip">name<span class="star">*</span></span>
+							<input id="name" name="name">
+						</label>
+						<label>
+							<span class="input_descrip">e-mail<span class="star">*</span></span>
+							<input id="mail" name="mail">
+						</label>
+						<label>
+							<span class="input_descrip">message<span class="star">*</span></span>
+							<textarea id="message" name="message"></textarea> 
+						</label>
+						<button type="submit" form="contact_form" value="send">
+							<i class="fa fa-paper-plane"></i>
+							send
+						</button>
+					</form><!--end of Form-->	
+
+					<footer>
+						<p>© All rights received 2014-2015 made by
+						 	<a href="http://www.dev.bzzz.biz.ua/">bzzz web development studio</a>
+						</p>
+					</footer>
+		      	</div><!--end of Item1-->
+
+		    	<!--CREATIVE AGENCY-->
+		      	<div class="item item2 agency">
+		      		<!--SCREEN1-->
+			      	<div class="screen1" id="screen1">
+			      		<p class="screen1_title">[bzzz!]*</p>
+			      		<p class="screen1_descr">creative agency</p>	
+			      	</div>
+
+					<!--SCREEN2-->
+					<div class="screen2">
+						<div class="background"></div>
+						<div class="wrap">
+							<div data-wow-delay="0.5s" data-wow-duration="1.5s" class="screen2_logo wow fadeInDown col-lg-12" >
+								<!--takes img of logo from js "group_agency_studio-->"	
+							</div>
+							<div class="screen2_title">
+								<!--takes title from js "group_agency_studio"-->
+							</div>
+							<div data-wow-delay="1.5s" data-wow-duration="1.5s" class="screen2_text wow fadeInDown col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptates, recusandae fuga, deserunt facilis quis consectetur! Nobis alias, sed itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laudantium.
+							</div>	
+						</div>
+					</div><!--end of Screen2-->
+
+		      		<!--SCREEN3-->
+		      		<div class="screen3 clearfix">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" data-wow-delay="1s" class="our_last_works_title wow fadeInLeft">
+								<p>Our</p>
+								<p>last</p>
+								<p>works</p>
+							</div>
+							<div class="last_works clearfix">
+								<!--one Work-->
+								<div class="one_work wow fadeInDown">
+									<img src="img/small_image.png" alt="">
+									<div class="description cl-effect-1">
+										<p class="descr_title">Lorem ipsum dolor</p>
+										<p class="descr_text">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										</p>
+										<a class="descr_link" href="#">Lorem ipsum >></a>
+										<div class="line"></div>
+									</div><!--end of description-->
+								</div><!--end of One_work-->
+
+								<!--one Work-->
+								<div class="one_work wow fadeInDown">
+									<img src="img/small_image.png" alt="">
+									<div class="description cl-effect-1">
+										<p class="descr_title">Lorem ipsum dolor</p>
+										<p class="descr_text">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										</p>
+										<a class="descr_link" href="#">Lorem ipsum >></a>
+										<div class="line"></div>
+									</div><!--end of description-->
+								</div><!--end of One_work-->
+
+								<!--one Work-->
+								<div class="one_work wow fadeInDown">
+									<img src="img/small_image.png" alt="">
+									<div class="description cl-effect-1">
+										<p class="descr_title">Lorem ipsum dolor</p>
+										<p class="descr_text">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										</p>
+										<a class="descr_link" href="#">Lorem ipsum >></a>
+										<div class="line"></div>
+									</div><!--end of description-->
+								</div><!--end of One_work-->
+							</div><!--end of Last works-->
+						</div><!--end of Wrap-->
+					</div><!--end of Screen3-->
+
+					<!--VISIT OUR WEB SITE-->
+					<div class="visit">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" class="visit_left col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0">
+								<p>visit our</p>
+								<p>web site</p>
+							</div>
+							<div class="visit_right col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-1">
+								<div data-wow-duration="1.5s">Want to see more works and to know more about us?</div>
+								<div data-wow-duration="1.5s">Go to 
+									<a href="#">www.dev.bzzz.biz.ua</a>
+								</div>
+							</div>
+						</div><!--end of Visit_wrap-->
+					</div><!--end of Visit-->
+
+					<!--OUR PRINCIPLES-->
+					<div id="about_us" class="principles">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" class="princ_title col-lg-12 wow fadeInLeft">
+								<p>our</p>
+								<p>principles</p>
+							</div>
+							<div class="princ_features">
+								<div class="princ_one_feature clearfix">
+									<p class="feat_number">1</p>
+									<div class="feat_content">
+										<p class="feat_title">индивидуальность</p>
+										<p class="feat_text">
+											Мы верим, что каждая компания уникальна и создана с душой. Мы вникаем в структуру компании, ее принципы и преимущества, чтобы в полном объеме передать неповторимость каждого бизнеса. Работая в тесном контакте с заказчиком, мы стараемся сделать именно тот продукт, который полностью отразит специфику компании и представит ее клиенту в лучшем свете.	
+										</p>
+									</div><!--end of Feature_content-->
+								</div><!--end of Princ_one_feature-->
+
+								<div class="princ_one_feature clearfix">
+									<p class="feat_number">2</p>
+									<div class="feat_content">
+										<p class="feat_title">внимание к деталям</p>
+										<p class="feat_text">
+											Отличный продукт от хорошего отличают именно детали. Мы понимаем насколько важно прорабатывать каждую мелочь. Никакой халтуры, каждая кнопочка, каждый сантиметр рекламного плаката, все прорабатывается до мелочей и разрабатывается для каждого клиента индивидуально.
+										</p>
+									</div><!--end of Feature_content-->
+								</div><!--end of Princ_one_feature-->
+
+								<div class="princ_one_feature clearfix">
+									<p class="feat_number">3</p>
+									<div class="feat_content clearfix">
+										<p class="feat_title">ориентированность на цели</p>
+										<p class="feat_text">
+											Работая с нами вы получите не просто красивую картинку, но и реально работающий инструмент. При создании продукта мы ориентированы на те бизнес-цели, которые мы с Вами определили в самом начале и строим все концепции и продукты с четкой ориентировкой на цель.	
+										</p>
+									</div><!--end of Feature_content-->
+								</div><!--end of Princ_one_feature-->
+							</div><!--end of Princ_features-->
+							<div class="princ_imgs">
+								<img data-wow-duration="1.5s" data-wow-delay="1s" class="princ_img1 wow fadeInRight" src="img/principles_001.png" alt="our principle: individuality">
+								<img data-wow-duration="1.5s" data-wow-delay="1.5s" class="princ_img2 wow fadeInRight" src="img/principles_002.png" alt="our principle: focus on goal">
+								<img data-wow-duration="1.5s" data-wow-delay="2s" class="princ_img3 wow fadeInRight" src="img/principles_003.png" alt="our principle: attention to details">
+							</div><!--end of Princ_imgs-->
+						</div><!--end of Wrap-->
+					</div><!--end of Principles-->
+
+					<!--OUR ADVANTAGES-->
+					<div class="advantages">
+						<div class="wrap clearfix">
+							<div data-wow-delay="0.5" data-wow-duration="1.5s" class="adv_title col-lg-12 wow fadeInLeft">
+								<p>our</p>
+								<p>advantages</p>
+							</div>
+
+							<!--one Advantage-->
+							<div class="one_adv">
+								<div class="one_adv_img_block"><img src="img/advantage_001.png" alt=""></div>
+								<div class="one_adv_title">идеи</div>
+								<ul class="one_adv_features">
+									<li>ориентированность на цели</li>
+									<li>бесплатная консультация</li>
+									<li>креатив</li>
+									<li>никаких шаблонных решений!</li>
+								</ul>
+							</div><!--end of One_adv-->
+
+							<!--one Advantage-->
+							<div class="one_adv">
+								<div class="one_adv_img_block"><img src="img/advantage_002.png" alt=""></div>
+								<div class="one_adv_title">дизайн</div>
+								<ul class="one_adv_features">
+									<li>продуманность</li>
+									<li>связанность</li>
+									<li>постоянное согласование</li>
+									<li>уникальность</li>
+								</ul>
+							</div><!--end of One_adv-->
+
+							<!--one Advantage-->
+							<div class="one_adv">
+								<div class="one_adv_img_block"><img src="img/advantage_003.png" alt=""></div>
+								<div class="one_adv_title">разработка</div>
+								<ul class="one_adv_features">
+									<li>соблюдение сроков</li>
+									<li>проработка мелочей</li>
+									<li>тестирование</li>
+									<li>соответствие стандартам</li>
+								</ul>
+							</div><!--end of One_adv-->
+						</div><!--end of Wrap-->
+					</div><!--end of Advantages-->
+
+					<!--CONTACTS-->
+					<div class="contacts">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" class="visit_left col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0">
+								<p>contacts</p>
+							</div>
+							<div class="visit_right col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-1">
+								<div data-wow-duration="1.5s" class="contacts_top">
+									<p>PLEASE, CONTACT US AT ANY TIME!</p>
+									<p>You can reach us:</p>
+									<p>Tel. +38 093-990-04-79</p>
+								</div>
+								<div data-wow-duration="1.5s" class="contacts_bottom">
+									<p>Just write us!</p>
+									<p>E_mail: info@bzzz.biz.ua</p>
+									<p>WE WILL BE HAPPY TO HELP YOU!</p>
+								</div>
+							</div><!--end of visit_right-->
+						</div><!--end of Wrap-->
+					</div><!--end of Contacts-->
+
+					<!--CLIENTS-->
+					<div class="clients clearfix">
+						<div class="wrap clearfix">
+							<div class="clients_title">
+								<p>our</p>
+								<p>clients</p>
+							</div>
+
+							<!--one Client-->
+							<div class="one_client wow fadeInDown">
+								<div class="one_client_img_block">
+									<img src="img/client001.png" alt="Clients name here">
+								</div>
+								<p class="one_client_name">client name</p>
+								<div class="quote_start">
+									<img src="img/quote_start.png" alt="">
+								</div>
+								<p class="one_client_review">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia distinctio repudiandae sunt quis sed accusantium reiciendis repellendus officiis aperiam tenetur
+								</p>
+								<div class="quote_finish">
+									<img src="img/quote_finish.png" alt="">
+								</div>
+								<a href="#" class="one_client_link">link to this work >></a>
+							</div><!--end of One_client-->
+							
+							<!--one Client-->
+							<div class="one_client wow fadeInDown">
+								<div class="one_client_img_block">
+									<img src="img/client001.png" alt="Clients name here">
+								</div>
+								<p class="one_client_name">client name</p>
+								<div class="quote_start">
+									<img src="img/quote_start.png" alt="">
+								</div>
+								<p class="one_client_review">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia distinctio repudiandae sunt quis sed accusantium reiciendis repellendus officiis aperiam tenetur
+								</p>
+								<div class="quote_finish">
+									<img src="img/quote_finish.png" alt="">
+								</div>
+								<a href="#" class="one_client_link">link to this work >></a>
+							</div><!--end of One_client-->
+							
+							<!--one Client-->
+							<div class="one_client wow fadeInDown">
+								<div class="one_client_img_block">
+									<img src="img/client001.png" alt="Clients name here">
+								</div>
+								<p class="one_client_name">client name</p>
+								<div class="quote_start">
+									<img src="img/quote_start.png" alt="">
+								</div>
+								<p class="one_client_review">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia distinctio repudiandae sunt quis sed accusantium reiciendis repellendus officiis aperiam tenetur
+								</p>
+								<div class="quote_finish">
+									<img src="img/quote_finish.png" alt="">
+								</div>
+								<a href="#" class="one_client_link">link to this work >></a>
+							</div><!--end of One_client-->
+						</div><!--end of Wrap-->
+					</div><!--end of Clients-->
+
+					<!--CONTACT FORM-->
+					<form data-wow-duration="1.5s" data-wow-delay="1s" class="wow fadeInDown" id="contact_form" action="" method="post">
+						<label>
+							<span class="input_descrip">name<span class="star">*</span></span>
+							<input id="name" name="name">
+						</label>
+						<label>
+							<span class="input_descrip">e-mail<span class="star">*</span></span>
+							<input id="mail" name="mail">
+						</label>
+						<label>
+							<span class="input_descrip">message<span class="star">*</span></span>
+							<textarea id="message" name="message"></textarea> 
+						</label>
+						<button type="submit" form="contact_form" value="send">
+							<i class="fa fa-paper-plane"></i>
+							send
+						</button>
+					</form><!--end of Form-->	
+
+					<footer>
+						<p>© All rights received 2014-2015 made by
+						 	<a href="http://www.dev.bzzz.biz.ua/">bzzz web development studio</a>
+						</p>
+					</footer>
+		    	</div><!--end of Item2-->
+
+		      	<!--WEB DEVELOPMENT STUDIO-->
+		      	<div class="item item3 studio ">
+		      		<!--SCREEN1-->
+			      	<div class="screen1" id="screen1">
+			      		<div class="screen1_title">bz*z</div>
+			      		<div class="screen1_descr">web development studio</div>	
+			      	</div>
+		      		
+					<!--SCREEN2-->
+					<div class="screen2">
+						<div class="background"></div>
+						<div class="wrap">
+							<div data-wow-delay="0.5s" data-wow-duration="1.5s" class="screen2_logo wow fadeInDown col-lg-12" >
+								<!--takes img of logo from js "group_agency_studio-->"	
+							</div>
+							<div class="screen2_title">
+								<!--takes title from js "group_agency_studio"-->
+							</div>
+							<div data-wow-delay="1.5s" data-wow-duration="1.5s" class="screen2_text wow fadeInDown col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptates, recusandae fuga, deserunt facilis quis consectetur! Nobis alias, sed itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laudantium.
+							</div>	
+						</div>
+					</div><!--end of Screen2-->
+
+		      		<!--SCREEN3-->
+		      		<div class="screen3 clearfix">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" data-wow-delay="1s" class="our_last_works_title wow fadeInLeft">
+								<p>Our</p>
+								<p>last</p>
+								<p>works</p>
+							</div>
+							<div class="last_works clearfix">
+								<!--one Work-->
+								<div class="one_work wow fadeInDown">
+									<img src="img/small_image.png" alt="">
+									<div class="description cl-effect-1">
+										<p class="descr_title">Lorem ipsum dolor</p>
+										<p class="descr_text">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										</p>
+										<a class="descr_link" href="#">Lorem ipsum >></a>
+										<div class="line"></div>
+									</div><!--end of description-->
+								</div><!--end of One_work-->
+
+								<!--one Work-->
+								<div class="one_work wow fadeInDown">
+									<img src="img/small_image.png" alt="">
+									<div class="description cl-effect-1">
+										<p class="descr_title">Lorem ipsum dolor</p>
+										<p class="descr_text">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										</p>
+										<a class="descr_link" href="#">Lorem ipsum >></a>
+										<div class="line"></div>
+									</div><!--end of description-->
+								</div><!--end of One_work-->
+
+								<!--one Work-->
+								<div class="one_work wow fadeInDown">
+									<img src="img/small_image.png" alt="">
+									<div class="description cl-effect-1">
+										<p class="descr_title">Lorem ipsum dolor</p>
+										<p class="descr_text">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										</p>
+										<a class="descr_link" href="#">Lorem ipsum >></a>
+										<div class="line"></div>
+									</div><!--end of description-->
+								</div><!--end of One_work-->
+							</div><!--end of Last works-->
+						</div><!--end of Wrap-->
+					</div><!--end of Screen3-->
+
+					<!--VISIT OUR WEB SITE-->
+					<div class="visit">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" class="visit_left col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0">
+								<p>visit our</p>
+								<p>web site</p>
+							</div>
+							<div class="visit_right col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-1">
+								<div>Want to see more works and to know more about us?</div>
+								<div>Go to 
+									<a href="#">www.dev.bzzz.biz.ua</a>
+								</div>
+							</div>
+						</div><!--end of Wrap-->
+					</div><!--end of Visit-->
+
+					<!--OUR PRINCIPLES-->
+					<div id="about_us" class="principles">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" class="princ_title col-lg-12 wow fadeInLeft">
+								<p>our</p>
+								<p>principles</p>
+							</div>
+							<div class="princ_features">
+								<div class="princ_one_feature clearfix">
+									<p class="feat_number">1</p>
+									<div class="feat_content">
+										<p class="feat_title">индивидуальность</p>
+										<p class="feat_text">
+											Мы верим, что каждая компания уникальна и создана с душой. Мы вникаем в структуру компании, ее принципы и преимущества, чтобы в полном объеме передать неповторимость каждого бизнеса. Работая в тесном контакте с заказчиком, мы стараемся сделать именно тот продукт, который полностью отразит специфику компании и представит ее клиенту в лучшем свете.	
+										</p>
+									</div><!--end of Feature_content-->
+								</div><!--end of Princ_one_feature-->
+
+								<div class="princ_one_feature clearfix">
+									<p class="feat_number">2</p>
+									<div class="feat_content">
+										<p class="feat_title">внимание к деталям</p>
+										<p class="feat_text">
+											Отличный продукт от хорошего отличают именно детали. Мы понимаем насколько важно прорабатывать каждую мелочь. Никакой халтуры, каждая кнопочка, каждый сантиметр рекламного плаката, все прорабатывается до мелочей и разрабатывается для каждого клиента индивидуально.
+										</p>
+									</div><!--end of Feature_content-->
+								</div><!--end of Princ_one_feature-->
+
+								<div class="princ_one_feature clearfix">
+									<p class="feat_number">3</p>
+									<div class="feat_content clearfix">
+										<p class="feat_title">ориентированность на цели</p>
+										<p class="feat_text">
+											Работая с нами вы получите не просто красивую картинку, но и реально работающий инструмент. При создании продукта мы ориентированы на те бизнес-цели, которые мы с Вами определили в самом начале и строим все концепции и продукты с четкой ориентировкой на цель.	
+										</p>
+									</div><!--end of Feature_content-->
+								</div><!--end of Princ_one_feature-->
+							</div><!--end of Princ_features-->
+							<div class="princ_imgs">
+								<img data-wow-duration="1.5s" data-wow-delay="1s" class="princ_img1 wow fadeInRight" src="img/principles_001.png" alt="our principle: individuality">
+								<img data-wow-duration="1.5s" data-wow-delay="1.5s" class="princ_img2 wow fadeInRight" src="img/principles_002.png" alt="our principle: focus on goal">
+								<img data-wow-duration="1.5s" data-wow-delay="2s" class="princ_img3 wow fadeInRight" src="img/principles_003.png" alt="our principle: attention to details">
+							</div><!--end of Princ_imgs-->
+						</div><!--end of Wrap-->
+					</div><!--end of Principles-->
+
+					<!--OUR ADVANTAGES-->
+					<div class="advantages">
+						<div class="wrap clearfix">
+							<div data-wow-delay="0.5" data-wow-duration="1.5s" class="adv_title col-lg-12 wow fadeInLeft">
+								<p>our</p>
+								<p>advantages</p>
+							</div>
+
+							<!--one Advantage-->
+							<div class="one_adv">
+								<div class="one_adv_img_block"><img src="img/advantage_001.png" alt=""></div>
+								<div class="one_adv_title">идеи</div>
+								<ul class="one_adv_features">
+									<li>ориентированность на цели</li>
+									<li>бесплатная консультация</li>
+									<li>креатив</li>
+									<li>никаких шаблонных решений!</li>
+								</ul>
+							</div><!--end of One_adv-->
+
+							<!--one Advantage-->
+							<div class="one_adv">
+								<div class="one_adv_img_block"><img src="img/advantage_002.png" alt=""></div>
+								<div class="one_adv_title">дизайн</div>
+								<ul class="one_adv_features">
+									<li>продуманность</li>
+									<li>связанность</li>
+									<li>постоянное согласование</li>
+									<li>уникальность</li>
+								</ul>
+							</div><!--end of One_adv-->
+
+							<!--one Advantage-->
+							<div class="one_adv">
+								<div class="one_adv_img_block"><img src="img/advantage_003.png" alt=""></div>
+								<div class="one_adv_title">разработка</div>
+								<ul class="one_adv_features">
+									<li>соблюдение сроков</li>
+									<li>проработка мелочей</li>
+									<li>тестирование</li>
+									<li>соответствие стандартам</li>
+								</ul>
+							</div><!--end of One_adv-->
+						</div><!--end of Wrap-->
+					</div><!--end of Advantages-->
+
+					<!--CONTACTS-->
+					<div class="contacts">
+						<div class="wrap clearfix">
+							<div data-wow-duration="1.5s" class="visit_left col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0">
+								<p>contacts</p>
+							</div>
+							<div class="visit_right col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-1">
+								<div data-wow-duration="1.5s" class="contacts_top">
+									<p>PLEASE, CONTACT US AT ANY TIME!</p>
+									<p>You can reach us:</p>
+									<p>Tel. +38 093-990-04-79</p>
+								</div>
+								<div data-wow-duration="1.5s" class="contacts_bottom">
+									<p>Just write us!</p>
+									<p>E_mail: info@bzzz.biz.ua</p>
+									<p>WE WILL BE HAPPY TO HELP YOU!</p>
+								</div>
+							</div><!--end of visit_right-->
+						</div><!--end of Wrap-->
+					</div><!--end of Contacts-->
+
+					<!--CLIENTS-->
+					<div class="clients clearfix">
+						<div class="wrap clearfix">
+							<div class="clients_title">
+								<p>our</p>
+								<p>clients</p>
+							</div>
+
+							<!--One Client-->
+							<div class="one_client wow fadeInDown">
+								<div class="one_client_img_block">
+									<img src="img/client001.png" alt="Clients name here">
+								</div>
+								<p class="one_client_name">client name</p>
+								<div class="quote_start">
+									<img src="img/quote_start.png" alt="">
+								</div>
+								<p class="one_client_review">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia distinctio repudiandae sunt quis sed accusantium reiciendis repellendus officiis aperiam tenetur
+								</p>
+								<div class="quote_finish">
+									<img src="img/quote_finish.png" alt="">
+								</div>
+								<a href="#" class="one_client_link">link to this work >></a>
+							</div><!--end of One_client-->
+							
+							<!--One Client-->
+							<div class="one_client wow fadeInDown">
+								<div class="one_client_img_block">
+									<img src="img/client001.png" alt="Clients name here">
+								</div>
+								<p class="one_client_name">client name</p>
+								<div class="quote_start">
+									<img src="img/quote_start.png" alt="">
+								</div>
+								<p class="one_client_review">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia distinctio repudiandae sunt quis sed accusantium reiciendis repellendus officiis aperiam tenetur
+								</p>
+								<div class="quote_finish">
+									<img src="img/quote_finish.png" alt="">
+								</div>
+								<a href="#" class="one_client_link">link to this work >></a>
+							</div><!--end of One_client-->
+							
+							<!--One Client-->
+							<div class="one_client wow fadeInDown">
+								<div class="one_client_img_block">
+									<img src="img/client001.png" alt="Clients name here">
+								</div>
+								<p class="one_client_name">client name</p>
+								<div class="quote_start">
+									<img src="img/quote_start.png" alt="">
+								</div>
+								<p class="one_client_review">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia distinctio repudiandae sunt quis sed accusantium reiciendis repellendus officiis aperiam tenetur
+								</p>
+								<div class="quote_finish">
+									<img src="img/quote_finish.png" alt="">
+								</div>
+								<a href="#" class="one_client_link">link to this work >></a>
+							</div><!--end of One_client-->
+						</div><!--end of Wrap-->
+					</div><!--end of Clients-->
+
+					<!--CONTACT FORM-->
+					<form data-wow-duration="1s" data-wow-delay="1s" class="wow fadeInDown" id="contact_form" action="" method="post">
+						<label>
+							<span class="input_descrip">name<span class="star">*</span></span>
+							<input id="name" name="name">
+						</label>
+						<label>
+							<span class="input_descrip">e-mail<span class="star">*</span></span>
+							<input id="mail" name="mail">
+						</label>
+						<label>
+							<span class="input_descrip">message<span class="star">*</span></span>
+							<textarea id="message" name="message"></textarea> 
+						</label>
+						<button type="submit" form="contact_form" value="send">
+							<i class="fa fa-paper-plane"></i>
+							send
+						</button>
+					</form><!--end of Form-->	
+
+					<footer>
+						<p>© All rights received 2014-2015 made by
+						 	<a href="http://www.dev.bzzz.biz.ua/">bzzz web development studio</a>
+						</p>
+					</footer>
+		      	</div><!--end of Item3-->
+		    </div><!--end of Carousel_inner-->
+
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control right_carousel_control" href="#myCarousel" role="button" data-slide="prev">
+		      	<i class="fa fa-angle-double-left"></i>
+		      	<span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control left_carousel_control" href="#myCarousel" role="button" data-slide="next">
+		      	<i class="fa fa-angle-double-right"></i>
+		      	<span class="sr-only">Next</span>
+	    	</a>
+  		</div><!--end of myCarousel-->
+	</body>
+</html>

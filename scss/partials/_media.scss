@@ -1,0 +1,345 @@
+/*-----------------
+        MEDIA
+------------------*/
+@media (max-width: 1220px) {
+    .princ_imgs {
+        display: none;
+    }
+    .principles {
+        padding: 60px 0 30px 0;
+    }
+    .princ_title {
+        display: table !important;
+        margin: auto !important;
+        margin-bottom: 35px;
+        width: 0;
+        float: none;
+        margin-bottom: 30px !important;
+    }
+    .princ_features {
+        float: none;
+        display: table;
+        margin: auto;
+    }
+    .clients {
+        background: url('../img/pattern-overlay2.png') no-repeat ;
+        background-size: cover;
+    }
+    .one_client {
+        float: none;
+        display: table;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 1200px) {
+    .advantages {
+        padding: 50px 0 0 0;
+    }
+    .one_adv {
+        float: none;
+        display: table;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .adv_img_block {
+        margin-bottom: 50px;
+    }
+    .one_adv_title {
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1140px) {
+    .our_last_works_title {
+        left: 75px;
+    }
+    .last_works {
+        margin-left: 318px;
+    }
+}
+@media (max-width: 1040px) {
+    .dropdown_wrap {
+        a {
+            margin-right: 110px;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .contacts {
+        .visit_left {
+            margin-bottom: 30px;
+        }
+    }
+    .contacts_top {
+        margin-bottom: 20px !important;
+    }
+    .visit_right,
+    .visit_left {
+        display: table;
+        margin: auto;
+    }
+}   
+@media (max-width: 900px) {
+    .dropdown_wrap {
+        a {
+            margin-right: 70px;
+        }
+    }
+    .our_last_works_title {
+        font-size: 60px !important;
+        line-height: 58px;
+        display: table;
+        margin: auto;
+        margin-bottom: 20px;
+        float: none;
+        position: static;
+    }
+    .last_works {
+        margin-left: 0;
+        float: none;        
+    }
+    .one_work {
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        float: none;
+    }
+    .screen3 {
+        padding-top: 40px;
+        .wrap {
+            margin-top: 0 !important;
+            padding-top: 30px;
+        }
+    }
+    .princ_title {
+        display: table;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .princ_features {
+        float: none;
+        display: table;
+        margin: auto;
+    }
+    input,
+    textarea {
+        width: 500px !important;
+    }
+    .item3 {
+        .screen2_title  {
+            font-size: 80px;
+        }
+    }
+    .agency_line_900,
+    .studio_line_900 {
+        display: block;
+    }
+    .agency_line,
+    .studio_line {
+        display: none;
+    }
+}
+@media (max-width: 740px) {
+    .dropdown_wrap {
+        a {
+            margin-right: 60px;
+            font-size: 28px;
+        }
+    }
+    .feat_number {
+        font-size: 56px;
+        margin-right: 20px;
+        bottom: 10px;
+    }
+    .feat_title {
+        font-size: 28px;
+        width: 370px;
+    }
+    .feat_text {
+        font-size: 18px;
+        width: 380px;
+    }
+    input,
+    textarea {
+        width: 350px !important;
+    }
+    textarea {
+        margin-bottom: 30px !important;
+    }
+}
+@media (max-width: 730px) {
+    .screen2_logo {
+        position: relative;
+        right: 10px;
+    }
+    .item3 {
+        .screen2_title  {
+            font-size: 53px !important;
+        }
+    }
+}
+@media (max-width: 660px) {
+    .menu {
+        height: 70px;
+    }
+    .dropdown_wrap {
+        height: 150px !important;
+        .links_wrap {
+            padding-top: 0px;
+            text-align: center;
+        }
+        a {
+            display: block;
+            margin-right: 0px !important;
+            margin-bottom: 16px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .screen2_title {
+        font-size: 70px;
+        line-height: 75px;
+    }
+    .one_adv {
+        margin-bottom: 50px;
+    }
+    .adv_img_block {
+        margin-bottom: 30px;
+    }
+    .one_adv_title {
+        margin-bottom: 20px;
+    }
+    .input_descrip {
+        float: none !important;
+        display: table;
+    }
+    .item3 {
+        .screen2_title  {
+            font-size: 48px !important;
+        }
+    }
+}
+@media (max-width: 490px) {
+    .feat_number {
+        font-size: 56px;
+        margin-right: 15px;
+        bottom: 10px;
+    }
+    .feat_title {
+        font-size: 22px;
+        width: 271px;
+    }
+    .feat_text {
+        font-size: 18px;
+        width: 260px;
+    }
+    footer {
+        p {
+            width: 300px;
+        }
+    }
+}
+@media (max-width: 470px) {
+    .screen2_title {
+        font-size: 56px !important;
+        line-height: 72px;
+        margin-bottom: 30px;
+    }
+    .screen2_text {
+        font-size: 16px;
+    }
+    .our_last_works_title {
+        font-size: 52px !important;
+        line-height: 51px;
+    }
+    .visit {
+        padding: 40px 0 40px 0;
+    }
+    .visit_right {
+        width: 300px !important;
+        font-size: 21px !important;
+    }
+    .visit_left {
+        margin-bottom: 20px;
+    }
+    .screen1_logos {
+        width: 310px;
+    }
+}
+@media (max-width: 420px) {
+    .one_client {
+        width: 280px;
+    }
+    .quote_start {
+        margin-left: 10px;
+    }
+    .quote_finish {
+        margin-right: 10px;
+    }
+    .one_client_review {
+        margin-bottom: 0;
+    }
+    .item3 {
+        .screen2_title  {
+            font-size: 35px !important;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .screen2 {
+        height: 570px;
+    }
+    .screen2_title {
+        font-size: 57px;
+    }
+    .one_work {
+        width: 230px;
+    }
+    .description {
+        width: 230px;
+    }
+    .principles {
+        padding-top: 30px;
+    }
+    .princ_one_feature {
+        margin-bottom: 25px;
+    }
+    .feat_number {
+        margin-right: 13px;
+        bottom: 5px;
+        font-size: 39px;
+    }
+    .feat_title {
+        font-size: 20px;
+        margin-bottom: 16px;
+        width: 245px;
+    }
+    .feat_text {
+        font-size: 18px;
+        width: 230px;
+    }
+    .princ_title {
+        font-size: 44px;
+    }
+    .one_adv_features {
+        width: 270px;
+    }
+    input,
+    textarea {
+        width: 280px !important;
+    }
+    input {
+        height: 50px !important;
+    }
+    textarea {
+        height: 120px !important;
+    }
+    .input_descrip {
+        font-size: 21px;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1050px) {
+    .visit_left {
+        padding-left: 40px;
+    }
+}

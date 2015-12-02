@@ -1,0 +1,6 @@
+@mixin animation ($anim_name, $duration, $anim_timimg_func, $repeat) {
+	-webkit-animation: $anim_name $duration $anim_timimg_func $repeat;
+	-moz-animation: $anim_name $duration $anim_timimg_func $repeat;
+	-o-animation: $anim_name $duration $anim_timimg_func $repeat;
+	animation: $anim_name $duration $anim_timimg_func $repeat;
+}

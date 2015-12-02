@@ -1,0 +1,6 @@
+@mixin transition ($tr_property, $tr_duration, $tr_timimg_func, $tr_delay) {
+	-webkit-transition: $tr_property $tr_duration $tr_timimg_func $tr_delay;
+	-moz-transition: $tr_property $tr_duration $tr_timimg_func $tr_delay;
+	-o-transition: $tr_property $tr_duration $tr_timimg_func $tr_delay;
+	transition: $tr_property $tr_duration $tr_timimg_func $tr_delay;
+}

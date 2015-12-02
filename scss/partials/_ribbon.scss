@@ -1,0 +1,82 @@
+/*-------------
+    RIBBON
+-------------*/
+.ribbons_wrap1 {
+    @extend .ribbons_wrap;
+    top: 600px;
+}
+.ribbons_wrap {
+    width: 6000px;
+    height: 680px;
+    float: left;
+    position: absolute;
+    top: 0;
+}
+svg {
+    float: left;
+}
+#ribbon1,
+#ribbon2 {
+    z-index: 1;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    @include animation(anim, 100s, ease-out, infinite);
+    @include transition(transform, 1s, ease-out, 0s);
+}
+.left_ribbon {
+    @include transform(translateX(-1920px));
+}
+.active_ribbon {
+    @include transform(translateX(0px));
+}
+@keyframes anim {
+    0% {left: 0px;}
+    100% {left: 1920px;}
+}
+@-moz-keyframes anim {
+    0% {left: 0px;}
+    100% {left: 1920px;}
+}
+@-webkit-keyframes anim {
+    0% {left: 0px;}
+    100% {left: 1920px;}
+}
+.ribbons_wrap_1366 {
+    display: none;
+    width: 6000px;
+    height: 680px;
+    float: left;
+    position: absolute;
+    top: 0;
+    svg {
+        float: left;
+    }
+}
+#ribbon1_1366,
+#ribbon2_1366 {
+    z-index: 1;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    @include animation(anim_1366, 100s, ease-out, infinite);
+    @include transition(transform, 1s, ease-out, 0s);
+}
+.left_ribbon_1366 {
+    @include transform(translateX(-1366px));
+}
+.active_ribbon_1366 {
+    @include transform(translateX(0px));
+}
+@keyframes anim_1366 {
+    0% {left: 0px;}
+    100% {left: 1366px;}
+}
+@-moz-keyframes anim_1366 {
+    0% {left: 0px;}
+    100% {left: 1366px;}
+}
+@-webkit-keyframes anim_1366 {
+    0% {left: 0px;}
+    100% {left: 1366px;}
+}

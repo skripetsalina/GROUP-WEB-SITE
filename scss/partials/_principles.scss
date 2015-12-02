@@ -1,0 +1,68 @@
+/*-------------------
+    OUR PRINCIPLES
+--------------------*/
+.principles {
+    clear: both;
+    width: 100%;
+    background: $black;
+    color: #fff;
+    padding: 80px 0 150px 0;
+}
+.princ_title {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 48px;
+    line-height: 56px;
+    font-family: Lato-Bold;
+    margin: 0px 0px 80px 0px;
+}
+.princ_features {
+    float: left;
+    font-family: Lato-Regular;
+    margin-left: 20px;
+}
+.princ_one_feature {
+    margin-bottom: 30px;
+}
+.feat_number {
+    float: left;
+    font-size: 80px;
+    font-family: Lato-Bold;
+    margin-right: 36px; 
+    position: relative;
+    bottom: 20px;
+}
+.feat_content {
+    float: left;
+    margin-bottom: 20px;
+}
+.feat_title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.feat_text {
+    font-size: 18px;
+    width: 500px;
+    line-height: 23px;
+    text-align: justify;
+    margin-bottom: 0;
+}
+.princ_imgs {
+    margin: 15px 0 0 70px;
+    position: relative;
+    float: left;
+    .princ_img1 {
+        position: absolute;
+        top: 23px;
+    }
+    .princ_img2 {
+        position: absolute;
+        left: 162px;
+        top: 258px;
+    } 
+    .princ_img3 {
+        position: absolute;
+        top: 495px;
+    } 
+}

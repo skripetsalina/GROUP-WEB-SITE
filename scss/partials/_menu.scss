@@ -1,0 +1,118 @@
+/*-----------
+    MENU
+-----------*/
+.menu {
+    z-index: 60;
+    overflow: hidden;
+    clear: both;
+    background: transparent;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    opacity: 1;
+    @include transition(background, 0.5s, ease-out, 0s);
+}
+.menu_left {
+    margin-left: 20px;
+    float: left;
+    line-height: 77px;
+}
+.star_agency_blue,
+.star_studio_violet,
+.star_group_white,
+.star_agency_white,
+.star_studio_white {
+    display: none;  
+}
+.menu_right {
+    margin: 20px 30px 0 0;
+    float: right;
+    line-height: 80px;
+}
+.dropdown_wrap {
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    background: transparent;
+    a {
+        display: inline;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 36px;    
+        font-family: Lato-Bold;
+        margin-right: 160px;
+        &:hover,
+        &:active {
+            color: #000;
+        }
+        &:nth-child(3) {
+            margin-right: 0;
+        }   
+    }
+    .links_wrap {
+        padding-top: 27px;
+        clear: both;
+        margin: auto;
+        display: table;
+        opacity: 0;
+    }
+    .links_wrap_agency,
+    .links_wrap_studio {
+        display: none;
+    }   
+}
+/*-------------------
+       HAMBURGER 
+--------------------*/
+.hamburger {
+    cursor: pointer;
+    margin: auto;
+    padding-left: 1.25em;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.menu-global {
+  // backface-visibility: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: #000;
+    display: block;
+}
+.menu-top {
+    top: 0;
+    transition-property: top, transform;
+    transition-duration: 0.4s, 0.4s;
+    transition-delay: 0.4s, 0s;
+}
+.menu-middle {
+    top: 14px;
+    transition: opacity 0.4s ease-out 0s;
+}
+.menu-bottom {
+    bottom: 6px;
+    transition-property: bottom, transform;
+    transition-duration: 0.4s, 0.4s;
+    transition-delay: 0.4s, 0s;
+}
+.menu-top-click {
+    top: 14px;
+    transform: rotate(45deg);
+    transition-property: top, transform;
+    transition-duration: 0.4s, 0.4s;
+    transition-delay: 0s, 0.4s;
+}
+.menu-middle-click {
+    opacity: 0;
+    transition: opacity 0.4s ease-out 0s;
+}
+.menu-bottom-click {
+    bottom: 20px;
+    transform: rotate(-45deg);
+    transition-property: bottom, transform;
+    transition-duration: 0.4s, 0.4s;
+    transition-delay: 0s, 0.4s;
+}
